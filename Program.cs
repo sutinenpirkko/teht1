@@ -20,7 +20,7 @@ namespace tehtävä1
             if(tulos)
             {
                 Console.WriteLine($"Ajattele {nimi.ToUpper()}, vuonna 2031 olet jo {iika + 10} vuotta vanha");
-                Console.WriteLine("Siis tosi vanha.");
+                Console.WriteLine("Ihan nuori siis");
             }
             else
             {
