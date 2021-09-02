@@ -1,4 +1,4 @@
-﻿// Esimerkkiratkaisu tehtävää 1
+﻿// Esimerkkiratkaisu tehtävään 1
 // Pirkko Sutinen 13.4.2021
 // pirkko.sutinen@sasky.fi
 
