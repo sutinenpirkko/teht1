@@ -12,7 +12,7 @@ namespace tehtävä1
         {
             Console.WriteLine("Mikä sinun nimesi on?");
             string nimi = Console.ReadLine();
-            Console.WriteLine("Minä ikäinen olet?");
+            Console.WriteLine("Minkä ikäinen olet?");
             string ika = Console.ReadLine();
             bool tulos;
             int iika;
