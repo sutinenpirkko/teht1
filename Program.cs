@@ -18,7 +18,10 @@ namespace tehtävä1
             int iika;
             tulos = int.TryParse(ika, out iika);
             if(tulos)
-            {
+            { // Joko VSC tai jotain muuta pelleilee mut en saa mitään error codes tästä
+            // koodista, ja se ei vaan koskaan siirry seuraavaan kysymykseen enkä tiedä miks
+            //mutta olen nyt editoinut tämän kommentin tähän koodiin jonka forkkasin ja kloonasin
+            // omalle koneelleni.
                 Console.WriteLine($"Ajattele {nimi.ToUpper()}, vuonna 2031 olet jo {ika + 10} vuotta vanha");
             }
             else
