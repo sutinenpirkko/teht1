@@ -15,8 +15,11 @@ namespace tehtävä1
             Console.WriteLine("Minä ikäinen olet?");
             string ika = Console.ReadLine();
             bool tulos;
-            int iika;
-            tulos = int.TryParse(ika, out iika);
+            // Tarvisi ladata varmaan jotain lisäosia tai jotain, jotta alkais toimimaan tää C# koneella,
+            // mutta ehkä teen sen sit kunnollisella jalalla, kun on tarvetta. Jostain syystä ei anna
+            // nyt ajaa läpitte. Muokkailin asioita jokatapauksessa.
+            int ika;
+            tulos = int.TryParse(ika, out ika);
             if(tulos)
             {
                 Console.WriteLine($"Ajattele {nimi.ToUpper()}, vuonna 2031 olet jo {ika + 10} vuotta vanha");
