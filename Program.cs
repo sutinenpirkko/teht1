@@ -19,7 +19,8 @@ namespace tehtävä1
             tulos = int.TryParse(ika, out iika);
             if(tulos)
             {
-                Console.WriteLine($"Ajattele {nimi.ToUpper()}, vuonna 2031 olet jo {ika + 10} vuotta vanha");
+                // Muutettu str muodosta ika int muotoon
+                Console.WriteLine($"Ajattele {nimi.ToUpper()}, vuonna 2031 olet jo {int.Parse(ika) + 10} vuotta vanha");
             }
             else
             {
