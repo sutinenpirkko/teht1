@@ -10,9 +10,10 @@ namespace tehtävä1
     {
         static void Main(string[] args)
         {
+            //Koodi kysyy käyttäjän nimeä ja ikää
             Console.WriteLine("Mikä sinun nimesi on?");
             string nimi = Console.ReadLine();
-            Console.WriteLine("Minä ikäinen olet?");
+            Console.WriteLine("Minkä ikäinen olet?");
             string ika = Console.ReadLine();
             bool tulos;
             int iika;
