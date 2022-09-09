@@ -9,7 +9,8 @@ namespace tehtävä1
     class Program
     {
         static void Main(string[] args)
-        {
+        {   
+            //kommentit puuttuvat
             Console.WriteLine("Mikä sinun nimesi on?");
             string nimi = Console.ReadLine();
             Console.WriteLine("Minä ikäinen olet?");
