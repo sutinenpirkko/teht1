@@ -1,7 +1,7 @@
 ﻿// Esimerkkiratkaisu tehtävää 1
 // Pirkko Sutinen 13.4.2021
 // pirkko.sutinen@sasky.fi
-
+//En saa nyt toimimaan C# mun studio codessa, en saa ajettua ohjelmaa joten tyydyn kirjoittamaan vain kommentin, täytyy korjata tää tänään et voi C# tehdä muutakin kun TMCssä valmista kurssia... T:Ronja
 using System;
 
 namespace tehtävä1
