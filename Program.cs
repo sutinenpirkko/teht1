@@ -16,10 +16,12 @@ namespace tehtävä1
             string ika = Console.ReadLine();
             bool tulos;
             int iika;
+            var vuosienErotus = -1 * (DateTime.Now.Year - 2031);
+
             tulos = int.TryParse(ika, out iika);
-            if(tulos)
+            if (tulos)
             {
-                Console.WriteLine($"Ajattele {nimi.ToUpper()}, vuonna 2031 olet jo {ika + 10} vuotta vanha");
+                Console.WriteLine($"Ajattele {nimi.ToUpper()}, vuonna 2031 olet jo {iika + vuosienErotus} vuotta vanha");
             }
             else
             {
