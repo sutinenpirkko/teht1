@@ -14,12 +14,14 @@ namespace tehtävä1
             string nimi = Console.ReadLine();
             Console.WriteLine("Minä ikäinen olet?");
             string ika = Console.ReadLine();
+            int vuosiNyt = DateTime.Now.Year;
+
             bool tulos;
             int iika;
             tulos = int.TryParse(ika, out iika);
             if(tulos)
             {
-                Console.WriteLine($"Ajattele {nimi.ToUpper()}, vuonna 2031 olet jo {ika + 10} vuotta vanha");
+                Console.WriteLine($"Ajattele {nimi.ToUpper()}, vuonna 2031 olet jo {2031 - vuosiNyt + iika} vuotta vanha");
             }
             else
             {
