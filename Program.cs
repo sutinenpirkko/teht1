@@ -12,14 +12,16 @@ namespace tehtävä1
         {
             Console.WriteLine("Mikä sinun nimesi on?");
             string nimi = Console.ReadLine();
+
             Console.WriteLine("Minä ikäinen olet?");
             string ika = Console.ReadLine();
             bool tulos;
             int iika;
             tulos = int.TryParse(ika, out iika);
-            if(tulos)
+            if (tulos)
             {
-                Console.WriteLine($"Ajattele {nimi.ToUpper()}, vuonna 2031 olet jo {ika + 10} vuotta vanha");
+                int tulevaIka = iika + 10;
+                Console.WriteLine($"Ajattele {nimi.ToUpper()}, vuonna 2031 olet jo {tulevaIka} vuotta vanha");
             }
             else
             {
