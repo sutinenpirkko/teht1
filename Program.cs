@@ -16,7 +16,7 @@ namespace tehtävä1
             string ika = Console.ReadLine();
             bool tulos;
             int iika;
-            tulos = int.TryParse(ika, out iika);
+            tulos = int.TryParse(ika, out ika);
             if(tulos)
             {
                 Console.WriteLine($"Ajattele {nimi.ToUpper()}, vuonna 2031 olet jo {ika + 10} vuotta vanha");
