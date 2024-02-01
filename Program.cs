@@ -1,4 +1,4 @@
-﻿// Esimerkkiratkaisu tehtävää 1
+﻿// Esimerkkiratkaisu tehtävään 1
 // Pirkko Sutinen 13.4.2021
 // pirkko.sutinen@sasky.fi
 
@@ -19,7 +19,7 @@ namespace tehtävä1
             tulos = int.TryParse(ika, out iika);
             if(tulos)
             {
-                Console.WriteLine($"Ajattele {nimi.ToUpper()}, vuonna 2031 olet jo {ika + 10} vuotta vanha");
+                Console.WriteLine($"Ajattele {nimi.ToUpper()}, vuonna 2031 olet jo {iika + 10} vuotta vanha");
             }
             else
             {
