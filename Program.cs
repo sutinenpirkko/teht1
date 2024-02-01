@@ -3,28 +3,25 @@
 // pirkko.sutinen@sasky.fi
 
 using System;
-
-namespace tehtävä1
+class HelloWorld 
 {
-    class Program
+  static void Main(string[] args)
+  {
+    Console.WriteLine("Mikä sinun nimesi on?");
+    string nimi = Console.ReadLine();
+    Console.WriteLine("Minä ikäinen olet?");
+    string ika = Console.ReadLine();
+    bool tulos;
+    int iika;
+    tulos = int.TryParse(ika, out iika);
+    if(tulos)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Mikä sinun nimesi on?");
-            string nimi = Console.ReadLine();
-            Console.WriteLine("Minä ikäinen olet?");
-            string ika = Console.ReadLine();
-            bool tulos;
-            int iika;
-            tulos = int.TryParse(ika, out iika);
-            if(tulos)
-            {
-                Console.WriteLine($"Ajattele {nimi.ToUpper()}, vuonna 2031 olet jo {ika + 10} vuotta vanha");
-            }
-            else
-            {
-                Console.WriteLine("Anna ikä numerona");
-            }
-        }
+      int ika31 = iika + 7;
+      Console.WriteLine($"Ajattele {nimi.ToUpper()}, vuonna 2031 olet jo {ika31} vuotta vanha");
     }
+    else
+    {
+      Console.WriteLine("Anna ikä numerona");
+    }
+  }
 }
