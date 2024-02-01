@@ -1,4 +1,4 @@
-﻿// Esimerkkiratkaisu tehtävää 1
+// Esimerkkiratkaisu tehtävää 1
 // Pirkko Sutinen 13.4.2021
 // pirkko.sutinen@sasky.fi
 
@@ -11,15 +11,15 @@ namespace tehtävä1
         static void Main(string[] args)
         {
             Console.WriteLine("Mikä sinun nimesi on?");
-            string nimi = Console.ReadLine();
+            string? nimi = Console.ReadLine();
             Console.WriteLine("Minä ikäinen olet?");
-            string ika = Console.ReadLine();
+            string? ika = Console.ReadLine();
             bool tulos;
             int iika;
             tulos = int.TryParse(ika, out iika);
-            if(tulos)
+            if (tulos)
             {
-                Console.WriteLine($"Ajattele {nimi.ToUpper()}, vuonna 2031 olet jo {ika + 10} vuotta vanha");
+                Console.WriteLine($"Ajattele {nimi?.ToUpper()}, vuonna 2031 olet jo {Convert.ToInt32(ika) + 10} vuotta vanha");
             }
             else
             {
