@@ -15,7 +15,7 @@ namespace tehtävä1
             Console.WriteLine("Minä ikäinen olet?");
             string ika = Console.ReadLine();
             bool tulos;
-            int iika;
+            int ika;
             tulos = int.TryParse(ika, out iika);
             if(tulos)
             {
